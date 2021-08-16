@@ -1,5 +1,6 @@
 package com.jai.algorithms;
 
+import com.jai.algorithms.SearchingAlgorithms.BinarySearchAlgorithm;
 import com.jai.algorithms.SearchingAlgorithms.LinearSearchAlgorithm;
 import com.jai.algorithms.ShortestPathAlgorithms.DijkstrasAlgorithm;
 import org.springframework.boot.SpringApplication;
@@ -16,6 +17,9 @@ public class AlgorithmsApplication {
 
 		//LinearSearchAlgorithm implementation
 		LinearSearchAlgorithm.dulicatemain();
+
+		//BinarySearchAlgorithm implementation
+		BinarySearchAlgorithm.duplicatemain();
 	}
 
 
