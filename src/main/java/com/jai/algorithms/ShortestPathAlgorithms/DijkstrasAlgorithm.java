@@ -1,4 +1,4 @@
-package com.jai.algorithms;
+package com.jai.algorithms.ShortestPathAlgorithms;
 
 import java.util.Scanner;
 
@@ -7,28 +7,33 @@ public class DijkstrasAlgorithm {
 public static int size=9;
 
     static public void duplicatemain(){
-        Scanner scan=new Scanner(System.in);
-        int v=scan.nextInt();
-        int e=scan.nextInt();
-        int graph[][]=new int[v][v];
-        for(int i=0;i<e;i++){
-            int v1=scan.nextInt();
-            int v2=scan.nextInt();
-            int weight=scan.nextInt();
-            graph[v1][v2]=weight;
-            graph[v2][v1]=weight;
-        }
+
+        //for manual graph
+
+//        Scanner scan=new Scanner(System.in);
+//        int v=scan.nextInt();
+//        int e=scan.nextInt();
+//        int graph[][]=new int[v][v];
+//        for(int i=0;i<e;i++){
+//            int v1=scan.nextInt();
+//            int v2=scan.nextInt();
+//            int weight=scan.nextInt();
+//            graph[v1][v2]=weight;
+//            graph[v2][v1]=weight;
+//        }
 
 
-//        int graph[][] = new int[][] { { 0, 4, 0, 0, 0, 0, 0, 8, 0 },
-//                { 4, 0, 8, 0, 0, 0, 0, 11, 0 },
-//                { 0, 8, 0, 7, 0, 4, 0, 0, 2 },
-//                { 0, 0, 7, 0, 9, 14, 0, 0, 0 },
-//                { 0, 0, 0, 9, 0, 10, 0, 0, 0 },
-//                { 0, 0, 4, 14, 10, 0, 2, 0, 0 },
-//                { 0, 0, 0, 0, 0, 2, 0, 1, 6 },
-//                { 8, 11, 0, 0, 0, 0, 1, 0, 7 },
-//                { 0, 0, 2, 0, 0, 0, 6, 7, 0 } };
+        //default graph
+
+        int graph[][] = new int[][] { { 0, 4, 0, 0, 0, 0, 0, 8, 0 },
+                { 4, 0, 8, 0, 0, 0, 0, 11, 0 },
+                { 0, 8, 0, 7, 0, 4, 0, 0, 2 },
+                { 0, 0, 7, 0, 9, 14, 0, 0, 0 },
+                { 0, 0, 0, 9, 0, 10, 0, 0, 0 },
+                { 0, 0, 4, 14, 10, 0, 2, 0, 0 },
+                { 0, 0, 0, 0, 0, 2, 0, 1, 6 },
+                { 8, 11, 0, 0, 0, 0, 1, 0, 7 },
+                { 0, 0, 2, 0, 0, 0, 6, 7, 0 } };
 
 
         dijkstra(graph, 0);
