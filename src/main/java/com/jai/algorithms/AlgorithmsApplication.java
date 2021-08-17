@@ -3,6 +3,7 @@ package com.jai.algorithms;
 import com.jai.algorithms.SearchingAlgorithms.BinarySearchAlgorithm;
 import com.jai.algorithms.SearchingAlgorithms.LinearSearchAlgorithm;
 import com.jai.algorithms.ShortestPathAlgorithms.DijkstrasAlgorithm;
+import com.jai.algorithms.SortingAlgorithms.BubbleSort;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -20,6 +21,9 @@ public class AlgorithmsApplication {
 
 		//BinarySearchAlgorithm implementation
 		BinarySearchAlgorithm.duplicatemain();
+
+		//BubbleSort Implemenation
+		BubbleSort.duplicatemain();
 	}
 
 
