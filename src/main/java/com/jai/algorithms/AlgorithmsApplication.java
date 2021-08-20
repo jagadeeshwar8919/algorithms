@@ -37,6 +37,9 @@ public class AlgorithmsApplication {
 		//QuickSorting Implementation
 		QuickSorting.duplicatemain();
 
+		//HeapSort Implementation
+		HeapSort.duplicatemain();
+
 
 	}
 
